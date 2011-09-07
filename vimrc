@@ -1,6 +1,12 @@
 " Example Vim configuration.
 " Copy or symlink to ~/.vimrc or ~/_vimrc.
 
+set foldmethod=syntax		  " Turn on syntax folding of methods.
+
+" Tabs options.
+set shiftwidth=2
+set expandtab
+
 set nocompatible                  " Must come first because it changes other options.
 
 syntax enable                     " Turn on syntax highlighting.
@@ -48,7 +54,7 @@ set laststatus=2                  " Show the status line all the time
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
 " Or use vividchalk
-colorscheme topfunky-light
+colorscheme ir_black
 
 " Tab mappings.
 map <leader>tt :tabnew<cr>
