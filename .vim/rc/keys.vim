@@ -19,3 +19,8 @@ vnoremap <right> <nop>
 " Pressing j or k in a long wrapped will put cursor down/up one visual line.
 nnoremap j gj
 nnoremap k gk
+
+" Turn off F1
+inoremap <F1> <ESC>
+nnoremap <F1> <ESC>
+vnoremap <F1> <ESC>
