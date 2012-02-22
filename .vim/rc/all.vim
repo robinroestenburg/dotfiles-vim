@@ -18,4 +18,4 @@ source ~/.vim/rc/statusbar.vim
 source ~/.vim/rc/keys.vim
 source ~/.vim/rc/indent.vim
 source ~/.vim/rc/command-t.vim
-source ~/.vim/rc/visual.vim
+source ~/.vim/rc/display.vim

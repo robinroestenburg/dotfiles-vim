@@ -4,13 +4,11 @@ set lazyredraw
 " Syntax coloring lines that are too long just slows down the world
 set synmaxcol=2048
 
-
 set number
 
 set nowrap
 set linebreak
 set textwidth=100
-
 set background=light
 
 " Solarized options 
