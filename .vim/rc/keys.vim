@@ -1,5 +1,25 @@
 let mapleader = ","
 
+" Fast saving
+nmap <leader>w :w!<cr>
+" Fast quiting
+nmap <leader>q :q<cr>
+
+" " Fast editing of the .vimrc
+" nmap <leader>e :e! ~/.vimrc<cr>
+
+" " When vimrc is edited, reload it
+" autocmd! bufwritepost vimrc source ~/.vimrc
+
+" Smart way to move windows
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+" Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
+" TODO: Was not working, look for new ones.
+
 " Turn off arrow keys in normal mode.
 nnoremap <up> <nop>
 nnoremap <down> <nop>
@@ -27,3 +47,5 @@ inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
+" Pressing only the leader key will turn of the highlighting.
+map <silent> <leader><cr> :noh<cr>
