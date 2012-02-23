@@ -7,6 +7,5 @@ set showmode
 " Always show a status line.
 set laststatus=2
 
-" Show the line and column number of the cursor position, separated by a
-"	comma.
+" Show the line and column number of the cursor position, separated by a comma.
 set ruler

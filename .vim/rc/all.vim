@@ -1,5 +1,5 @@
-" Use Vim settings, rather than Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
+" Use Vim settings, rather than Vi settings (much better!). This must be first,
+" because it changes other options as a side effect.
 set nocompatible
 
 " Tim Pope's Pathogen plugin.
@@ -14,8 +14,8 @@ syntax on
 " Enable file type detection and do language-dependent indenting.
 filetype plugin indent on
 
-source ~/.vim/rc/statusbar.vim
 source ~/.vim/rc/keys.vim
+source ~/.vim/rc/statusbar.vim
 source ~/.vim/rc/indent.vim
 source ~/.vim/rc/command-t.vim
 source ~/.vim/rc/display.vim

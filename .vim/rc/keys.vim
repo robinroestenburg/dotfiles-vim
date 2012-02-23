@@ -1,3 +1,5 @@
+let mapleader = ","
+
 " Turn off arrow keys in normal mode.
 nnoremap <up> <nop>
 nnoremap <down> <nop>
@@ -24,3 +26,4 @@ nnoremap k gk
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
+
