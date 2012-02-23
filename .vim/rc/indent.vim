@@ -7,10 +7,10 @@ set expandtab
 " Use 2 spaces for each step of (auto)indent.
 set shiftwidth=2
 
-set cindent
+" set cindent
 
 " Do smart autoindenting when starting a new line. 
-set smartindent
+" set smartindent
 
 set smarttab
 
