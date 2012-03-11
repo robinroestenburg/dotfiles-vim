@@ -49,3 +49,10 @@ vnoremap <F1> <ESC>
 
 " Pressing only the leader key will turn of the highlighting.
 map <silent> <leader><cr> :noh<cr>
+
+" Shortcuts for using Tabularize, see: 
+" http://vimcasts.org/episodes/aligning-text-with-tabular-vim/
+nmap <Leader>a= :Tabularize /=<CR>
+vmap <Leader>a= :Tabularize /=<CR>
+nmap <Leader>a: :Tabularize /:\zs<CR>
+vmap <Leader>a: :Tabularize /:\zs<CR>
