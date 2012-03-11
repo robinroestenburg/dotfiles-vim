@@ -19,3 +19,12 @@
 [submodule ".vim/bundle/tabular"]
 	path = .vim/bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
+[submodule ".vim/bundle/colors-zenburn"]
+	path = .vim/bundle/colors-zenburn
+	url = https://github.com/jnurmine/Zenburn.git
+[submodule ".vim/bundle/colors-irblack"]
+	path = .vim/bundle/colors-irblack
+	url = https://github.com/wgibbs/vim-irblack.git
+[submodule ".vim/bundle/colors-tirblack"]
+	path = .vim/bundle/colors-tirblack
+	url = https://github.com/vim-scripts/tir_black.git
