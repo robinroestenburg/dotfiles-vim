@@ -18,3 +18,5 @@ set linebreak
 set background=dark
 
 colorscheme zenburn
+
+set scrolloff=5
