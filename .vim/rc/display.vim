@@ -17,7 +17,7 @@ set nowrap
 set linebreak
 set background=dark
 
-colorscheme zenburn
+colorscheme tir_black
 
 set scrolloff=5
 
