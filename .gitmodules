@@ -28,3 +28,6 @@
 [submodule ".vim/bundle/colors-tirblack"]
 	path = .vim/bundle/colors-tirblack
 	url = https://github.com/vim-scripts/tir_black.git
+[submodule ".vim/bundle/colors-molokai"]
+	path = .vim/bundle/colors-molokai
+	url = https://github.com/tomasr/molokai.git
