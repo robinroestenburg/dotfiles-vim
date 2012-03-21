@@ -37,3 +37,6 @@
 [submodule ".vim/bundle/ack"]
 	path = .vim/bundle/ack
 	url = https://github.com/mileszs/ack.vim.git
+[submodule ".vim/bundle/colors-desert"]
+	path = .vim/bundle/colors-desert
+	url = https://github.com/fugalh/desert.vim.git
