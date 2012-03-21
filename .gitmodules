@@ -31,3 +31,6 @@
 [submodule ".vim/bundle/colors-molokai"]
 	path = .vim/bundle/colors-molokai
 	url = https://github.com/tomasr/molokai.git
+[submodule ".vim/bundle/netrw"]
+	path = .vim/bundle/netrw
+	url = https://github.com/vim-scripts/netrw.vim.git
