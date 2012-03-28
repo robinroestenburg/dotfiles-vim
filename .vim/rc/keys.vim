@@ -11,7 +11,7 @@ nmap <leader>q :q<cr>
 " " When vimrc is edited, reload it
 " autocmd! bufwritepost vimrc source ~/.vimrc
 
-" Smart way to move windows
+" Smart way to move around in windows
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
@@ -52,7 +52,30 @@ map <silent> <leader><cr> :noh<cr>
 
 " Shortcuts for using Tabularize, see: 
 " http://vimcasts.org/episodes/aligning-text-with-tabular-vim/
-nmap <Leader>a= :Tabularize /=<CR>
-vmap <Leader>a= :Tabularize /=<CR>
-nmap <Leader>a: :Tabularize /:\zs<CR>
-vmap <Leader>a: :Tabularize /:\zs<CR>
+nmap <leader>a= :Tabularize /=<CR>
+vmap <leader>a= :Tabularize /=<CR>
+nmap <leader>a: :Tabularize /:\zs<CR>
+vmap <leader>a: :Tabularize /:\zs<CR>
+
+
+" Command-T shortcuts
+nmap <leader>t  :CommandTFlush<CR>\|:CommandT<CR>
+nmap <leader>T  :CommandTFlush<CR>\|:CommandT %%<CR>
+nmap <leader>b  :CommandTBuffer<CR>
+nmap <leader>gc :CommandTFlush<CR>\|:CommandT app/controllers<CR>
+nmap <leader>gh :CommandTFlush<CR>\|:CommandT app/helpers<CR>
+nmap <leader>gm :CommandTFlush<CR>\|:CommandT app/models<CR>
+nmap <leader>gv :CommandTFlush<CR>\|:CommandT app/views<CR>
+nmap <leader>ga :CommandTFlush<CR>\|:CommandT app/stylesheets<CR>
+nmap <leader>gl :CommandTFlush<CR>\|:CommandT lib<CR>
+nmap <leader>gp :CommandTFlush<CR>\|:CommandT public<CR>
+nmap <leader>gf :CommandTFlush<CR>\|:CommandT features<CR>
+nmap <leader>gs :CommandTFlush<CR>\|:CommandT spec<CR>
+
+" Shortcuts for running RSpec, Cucumber and Test::Unit test.
+" TODO: Use better mappings ;)
+nmap <leader>r :call RunTestFile()<cr>
+nmap <leader>R :call RunNearestTest()<cr>
+nmap <leader>a :call RunTests('')<cr>
+nmap <leader>f :w\|:!script/features<cr>
+nmap <leader>fw :w\|:!script/features --profile wip<cr>

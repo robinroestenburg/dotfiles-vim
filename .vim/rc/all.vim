@@ -24,9 +24,11 @@ set noswapfile
 " not been changed inside of Vim, automatically read it again.
 set autoread
 
+source ~/.vim/rc/running-tests.vim
 source ~/.vim/rc/keys.vim
 source ~/.vim/rc/statusbar.vim
 source ~/.vim/rc/indent.vim
 source ~/.vim/rc/command-t.vim
 source ~/.vim/rc/display.vim
 source ~/.vim/rc/search.vim
+

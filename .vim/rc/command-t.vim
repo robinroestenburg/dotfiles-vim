@@ -1,7 +1,3 @@
-nnoremap <silent> <Leader>t :CommandT<CR>
-nnoremap <silent> <Leader>T :CommandTFlush<CR>
-nnoremap <silent> <Leader>b :CommandTBuffer<CR>
-
 " Normally Command-T will not recurse into "dot-directories" (directories whose
 " names begin with a dot) while performing its initial scan. Set this setting to
 " a non-zero value to override this behavior and recurse.
