@@ -54,6 +54,8 @@ map <silent> <leader><cr> :noh<cr>
 " http://vimcasts.org/episodes/aligning-text-with-tabular-vim/
 nmap <leader>a= :Tabularize /=<CR>
 vmap <leader>a= :Tabularize /=<CR>
+nmap <leader>a. :Tabularize /=>CR>
+vmap <leader>a. :Tabularize /=><CR>
 nmap <leader>a: :Tabularize /:\zs<CR>
 vmap <leader>a: :Tabularize /:\zs<CR>
 
