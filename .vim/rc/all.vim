@@ -24,6 +24,10 @@ set noswapfile
 " not been changed inside of Vim, automatically read it again.
 set autoread
 
+" Set the current shell to bash, because zsh does not use the correct Ruby
+" version.
+set shell=bash
+
 source ~/.vim/rc/running-tests.vim
 source ~/.vim/rc/keys.vim
 source ~/.vim/rc/statusbar.vim
