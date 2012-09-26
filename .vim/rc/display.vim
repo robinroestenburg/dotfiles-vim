@@ -21,13 +21,10 @@ set scrolloff=5
 set cursorline
 
 " Use a dark background.
-set background=dark
+set background=light
 
-" Use a darker background than used in the default Zenburn scheme.
-let g:zenburn_high_Contrast = 1
-
-" Use the Zenburn scheme.
-colorscheme zenburn
+" Use the Solarized scheme.
+colorscheme solarized
 
 " Highlight space errors.
 " By default, the "end" keyword is colorized according to the opening statement
