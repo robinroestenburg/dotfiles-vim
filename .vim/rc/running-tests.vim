@@ -19,9 +19,9 @@ function! RunTests(filename)
         elseif filereadable("Gemfile")
             " Skip bundler, until it gets faster.
             " exec ":!bundle exec rspec --color " . a:filename
-            exec ":!rspec --color " . a:filename
+            exec ":!rspec --format=doc --color " . a:filename
         else
-            exec ":!rspec --color " . a:filename
+            exec ":!rspec --format=doc --color " . a:filename
         end
     end
 endfunction
