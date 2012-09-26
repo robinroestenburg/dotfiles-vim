@@ -28,6 +28,9 @@ set autoread
 " version.
 set shell=bash
 
+" ruby path if you are using RVM
+let g:ruby_path = system('rvm current')
+
 source ~/.vim/rc/running-tests.vim
 source ~/.vim/rc/keys.vim
 source ~/.vim/rc/statusbar.vim
