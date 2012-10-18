@@ -21,10 +21,10 @@ set scrolloff=5
 set cursorline
 
 " Use a dark background.
-set background=light
+set background=dark
 
 " Use the Solarized scheme.
-colorscheme solarized
+colorscheme Tomorrow-Night
 
 " Highlight space errors.
 " By default, the "end" keyword is colorized according to the opening statement
