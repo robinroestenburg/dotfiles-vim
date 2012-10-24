@@ -13,6 +13,8 @@ function! RunTests(filename)
 
     if match(a:filename, '\.feature$') != -1
         exec ":!script/features " . a:filename
+    elseif match(a:filename, '\.js$') != -1
+        exec ":!jasmine-headless-webkit -c " . a:filename
     else
         if filereadable("script/test")
             exec ":!script/test " . a:filename
@@ -39,7 +41,7 @@ function! RunTestFile(...)
     endif
 
     " Run the tests for the previously-marked file.
-    let in_test_file = match(expand("%"), '\(.feature\|_spec.rb\)$') != -1
+    let in_test_file = match(expand("%"), '\(.feature\|_spec.rb\|_spec.js\)$') != -1
     if in_test_file
         call SetTestFile()
     elseif !exists("t:grb_test_file")
