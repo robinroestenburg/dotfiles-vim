@@ -59,7 +59,6 @@ vmap <leader>a. :Tabularize /=><CR>
 nmap <leader>a: :Tabularize /:\zs<CR>
 vmap <leader>a: :Tabularize /:\zs<CR>
 
-
 " Command-T shortcuts
 nmap <leader>t  :CommandTFlush<CR>\|:CommandT<CR>
 nmap <leader>T  :CommandTFlush<CR>\|:CommandT %%<CR>
