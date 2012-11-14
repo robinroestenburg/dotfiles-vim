@@ -35,6 +35,10 @@ let ruby_no_expensive = 1
 
 " Ruby operators can be highlighted. This is enabled by defining ruby_operators:
 let ruby_operators = 1
-      
+
 " Whitespace errors can be highlighted by defining "ruby_space_errors":
 let ruby_space_errors = 1
+
+" Show leading whitespace that includes spaces, and trailing whitespace.
+:highlight ExtraWhitespace ctermbg=red guibg=red
+:autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
