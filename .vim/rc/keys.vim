@@ -80,3 +80,8 @@ nmap <leader>R :call RunNearestTest()<cr>
 nmap <leader>a :call RunTests('')<cr>
 nmap <leader>f :w\|:!script/features<cr>
 nmap <leader>fw :w\|:!script/features --profile wip<cr>
+
+" Toggle the 'paste' option On/Off. When the 'paste' option is enabled, Vim
+" turns off all Insert mode mappings and abbreviations and resets a host of
+" options, including 'autoindent'.
+set pastetoggle=<f5>
