@@ -24,7 +24,7 @@ set cursorline
 set background=light
 
 " Use the Solarized scheme.
-colorscheme Solarized
+colorscheme Tomorrow-Night-Eighties
 
 " Highlight space errors.
 " By default, the "end" keyword is colorized according to the opening statement
