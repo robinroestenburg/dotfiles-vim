@@ -1,32 +1,24 @@
 " Functions for running tests from different frameworks in Ruby.
 
 function! RunTests(filename)
-    " Write the file and run tests for the given filename
-    :w
+  " Write the file and run tests for the given filename
+  :w
 
-    :silent !echo;echo;echo;echo;echo;echo;echo;echo;echo;echo
-    :silent !echo;echo;echo;echo;echo;echo;echo;echo;echo;echo
-    :silent !echo;echo;echo;echo;echo;echo;echo;echo;echo;echo
-    :silent !echo;echo;echo;echo;echo;echo;echo;echo;echo;echo
-    :silent !echo;echo;echo;echo;echo;echo;echo;echo;echo;echo
-    :silent !echo;echo;echo;echo;echo;echo;echo;echo;echo;echo
-    :silent !echo;echo;echo;echo;echo;echo;echo;echo;echo;echo
+  :silent !echo;echo;echo;echo;echo;echo;echo;echo;echo;echo
+  :silent !echo;echo;echo;echo;echo;echo;echo;echo;echo;echo
+  :silent !echo;echo;echo;echo;echo;echo;echo;echo;echo;echo
+  :silent !echo;echo;echo;echo;echo;echo;echo;echo;echo;echo
+  :silent !echo;echo;echo;echo;echo;echo;echo;echo;echo;echo
+  :silent !echo;echo;echo;echo;echo;echo;echo;echo;echo;echo
+  :silent !echo;echo;echo;echo;echo;echo;echo;echo;echo;echo
 
-    if match(a:filename, '\.feature$') != -1
-        exec ":!script/features " . a:filename
-    elseif match(a:filename, '\.js$') != -1
-        exec ":!jasmine-headless-webkit -c " . a:filename
-    else
-        if filereadable("script/test")
-            exec ":!script/test " . a:filename
-        elseif filereadable("Gemfile")
-            " Skip bundler, until it gets faster.
-            " exec ":!bundle exec rspec --color " . a:filename
-            exec ":!rspec --format=doc --color " . a:filename
-        else
-            exec ":!rspec --format=doc --color " . a:filename
-        end
-    end
+  if match(a:filename, '\.feature$') != -1
+    exec ":!cucumber -r features " . a:filename
+  elseif match(a:filename, '_spec\.rb$') != -1
+    exec ":!rspec " . a:filename
+  else
+    :echo a:filename
+  end
 endfunction
 
 function! SetTestFile()
